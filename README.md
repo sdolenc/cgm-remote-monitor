@@ -32,7 +32,7 @@ Older documentation is available at [nightscout.info](http://nightscout.info).
 
 ## Developer?
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+***** See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## [#WeAreNotWaiting](https://twitter.com/hashtag/wearenotwaiting?src=hash&vertical=default&f=images) and [this](https://vimeo.com/109767890) is why.
 
@@ -62,10 +62,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 - [Install](#install)
   - [Supported configurations:](#supported-configurations)
   - [Recommended minimum browser versions for using Nightscout:](#recommended-minimum-browser-versions-for-using-nightscout)
-  - [*Windows installation software requirements:](#installation-software-requirements)
+  - [****Windows installation software requirements:](#installation-software-requirements)
   - [Installation notes for users with nginx or Apache reverse proxy for SSL/TLS offloading:](#installation-notes-for-users-with-nginx-or-apache-reverse-proxy-for-ssltls-offloading)
-  - [*Installation notes for Microsoft Azure, Windows:](#installation-notes-for-microsoft-azure-windows)
-- [*Development](#development)
+  - [****Installation notes for Microsoft Azure, Windows:](#installation-notes-for-microsoft-azure-windows)
+- [****Development](#development)
 - [Usage](#usage)
   - [Updating my version?](#updating-my-version)
   - [Configure my uploader to match](#configure-my-uploader-to-match)
@@ -168,11 +168,12 @@ Older versions or other browsers might work, but are untested and unsupported. W
 
 
 ## Installation software requirements:
-
+- ***** git, vs code
 - [Node.js](http://nodejs.org/) Latest Node v14 or v16 LTS. Node versions that do not have the latest security patches will not be supported. Use [Install instructions for Node](https://nodejs.org/en/download/package-manager/) or use `bin/setup.sh`)
 - [MongoDB](https://www.mongodb.com/download-center?jmp=nav#community) 4.2 or 4.4.
+- add non-root (standard) user
 
-As a non-root user clone this repo then install dependencies into the root of the project:
+As a non-root user clone this repo, checkout `stepdo/dev` then install dependencies into the root of the project:
 
 ```bash
 $ npm install
@@ -192,12 +193,12 @@ $ npm install
 WEBSITE_NODE_DEFAULT_VERSION=16.16.0
 SCM_COMMAND_IDLE_TIMEOUT=300
 ```
-- See [install MongoDB, Node.js, and Nightscouton a single Windows system](https://github.com/jaylagorio/Nightscout-on-Windows-Server). if you want to host your Nightscout outside of the cloud. Although the instructions are intended for Windows Server the procedure is compatible with client versions of Windows such as Windows 7 and Windows 10.
+- ***** See [install MongoDB, Node.js, and Nightscouton a single Windows system](https://github.com/jaylagorio/Nightscout-on-Windows-Server). if you want to host your Nightscout outside of the cloud. Although the instructions are intended for Windows Server the procedure is compatible with client versions of Windows such as Windows 7 and Windows 10.
 - If you deploy to Windows and want to develop or test you need to install [Cygwin](https://www.cygwin.com/) (use [setup-x86_64.exe](https://www.cygwin.com/setup-x86_64.exe) and make sure to install `build-essential` package. Test your configuration by executing `make` and check if all tests are ok.
 
 # Development
 
-Want to help with development, or just see how Nightscout works? Great! See [CONTRIBUTING.md](CONTRIBUTING.md) for development-related documentation.
+***** Want to help with development, or just see how Nightscout works? Great! See [CONTRIBUTING.md](CONTRIBUTING.md) for development-related documentation.
 
 # Usage
 
