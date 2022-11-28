@@ -170,14 +170,19 @@ Older versions or other browsers might work, but are untested and unsupported. W
 ## Installation software requirements:
 - ***** git, vs code
 - [Node.js](http://nodejs.org/) Latest Node v14 or v16 LTS. Node versions that do not have the latest security patches will not be supported. Use [Install instructions for Node](https://nodejs.org/en/download/package-manager/) or use `bin/setup.sh`)
-- [MongoDB](https://www.mongodb.com/download-center?jmp=nav#community) 4.2 or 4.4.
-- add non-root (standard) user
+- [MongoDB](https://www.mongodb.com/download-center?jmp=nav#community) 4.2 or 4.4. Then setup db following https://github.com/jaylagorio/Nightscout-on-Windows-Server and https://nightscout.github.io/nightscout/ubuntu/
+- add non-root (standard) Windows user
 
 As a non-root user clone this repo, checkout `stepdo/dev` then install dependencies into the root of the project:
 
 ```bash
 $ npm install
 ```
+
+- todo settings, https,
+- todo startup
+- todo fix podsync
+- todo setup alexa
 
 ## Installation notes for users with nginx or Apache reverse proxy for SSL/TLS offloading:
 
